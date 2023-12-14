@@ -1,0 +1,16 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace TodoApi.Models
+{
+    public class TodoItemsDatabaseSettings
+    {
+        public string ConnectionString { get; set; } = null!;
+
+        public string DatabaseName { get; set; } = null!;
+
+        public string TodoItemsCollectionName { get; set; } = null!;
+    }
+}
