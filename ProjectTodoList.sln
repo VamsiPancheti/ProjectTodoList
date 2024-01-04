@@ -5,6 +5,10 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoApi", "TodoApi\TodoApi.csproj", "{AAA726A6-613E-4F81-9BA3-56FC6AFDDED7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataModel", "DataModel\DataModel.csproj", "{73CF3487-45E0-4E6E-B34B-8972FA847798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodoUI", "TodoUI\TodoUI.csproj", "{C3DA239B-C289-4D12-A6FB-22A86444D35C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{AAA726A6-613E-4F81-9BA3-56FC6AFDDED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAA726A6-613E-4F81-9BA3-56FC6AFDDED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAA726A6-613E-4F81-9BA3-56FC6AFDDED7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73CF3487-45E0-4E6E-B34B-8972FA847798}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73CF3487-45E0-4E6E-B34B-8972FA847798}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73CF3487-45E0-4E6E-B34B-8972FA847798}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73CF3487-45E0-4E6E-B34B-8972FA847798}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3DA239B-C289-4D12-A6FB-22A86444D35C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3DA239B-C289-4D12-A6FB-22A86444D35C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3DA239B-C289-4D12-A6FB-22A86444D35C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3DA239B-C289-4D12-A6FB-22A86444D35C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

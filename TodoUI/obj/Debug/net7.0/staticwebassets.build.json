@@ -1,0 +1,77 @@
+{
+  "Version": 1,
+  "Hash": "lZENOsfAbqaKzGGk5ZgbKzoAImj2OlF5ZYEJ4qZ98IM=",
+  "Source": "TodoUI",
+  "BasePath": "_content/TodoUI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "TodoUI\\wwwroot",
+      "Source": "TodoUI",
+      "ContentRoot": "C:\\Users\\vamsi\\Documents\\CodePlay\\ProjectTodoList\\TodoUI\\wwwroot\\",
+      "BasePath": "_content/TodoUI",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\vamsi\\Documents\\CodePlay\\ProjectTodoList\\TodoUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "SourceId": "TodoUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vamsi\\Documents\\CodePlay\\ProjectTodoList\\TodoUI\\wwwroot\\",
+      "BasePath": "_content/TodoUI",
+      "RelativePath": "css/bootstrap/bootstrap.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Identity": "C:\\Users\\vamsi\\Documents\\CodePlay\\ProjectTodoList\\TodoUI\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "SourceId": "TodoUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vamsi\\Documents\\CodePlay\\ProjectTodoList\\TodoUI\\wwwroot\\",
+      "BasePath": "_content/TodoUI",
+      "RelativePath": "css/bootstrap/bootstrap.min.css.map",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "C:\\Users\\vamsi\\Documents\\CodePlay\\ProjectTodoList\\TodoUI\\wwwroot\\css\\site.css",
+      "SourceId": "TodoUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\vamsi\\Documents\\CodePlay\\ProjectTodoList\\TodoUI\\wwwroot\\",
+      "BasePath": "_content/TodoUI",
+      "RelativePath": "css/site.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
+    }
+  ]
+}

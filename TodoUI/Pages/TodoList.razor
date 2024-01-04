@@ -1,0 +1,53 @@
+@page "/TodoList"
+@using DataModel
+@using TodoUI.Services
+
+@inject ITodoService _todoService;
+
+@code {
+    
+    public IEnumerable<TodoItems> TodoItems = null;
+
+        protected override async Task OnInitializedAsync()
+        {
+            await base.OnInitializedAsync();
+            TodoItems = (await _todoService.GetTodoItems()).ToList();
+        }
+}
+
+<h3>TodoList</h3>
+@if( TodoItems == null)
+{
+    <h3>No Data Available in Database</h3>
+}
+else
+{
+    @if(TodoItems.Any())
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>IsCompleted</th>
+                    <th>Author</th>
+                    <th>Date</th>
+                    <th>Reviews</th>
+                </tr>
+
+            </thead>
+            <tbody>
+                @foreach(var item in TodoItems)
+                {
+                    <tr>
+                        <th>@item.TaskName</th>
+                        <th>@item.IsCompleted</th>
+                        <th>@item.Author</th>
+                        <th>@item.Date</th>
+                        <th>@item.Reviews</th>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    }
+}

@@ -266,3 +266,6 @@ C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\TodoApi\obj\Debug\net7.0\refin
 C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\TodoApi\obj\Debug\net7.0\TodoApi.pdb
 C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\TodoApi\obj\Debug\net7.0\TodoApi.genruntimeconfig.cache
 C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\TodoApi\obj\Debug\net7.0\ref\TodoApi.dll
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\TodoApi\bin\Debug\net7.0\DataModel.dll
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\TodoApi\bin\Debug\net7.0\DataModel.pdb
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\TodoApi\obj\Debug\net7.0\TodoApi.sourcelink.json

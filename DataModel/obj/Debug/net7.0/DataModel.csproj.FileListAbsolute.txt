@@ -1,0 +1,13 @@
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\bin\Debug\net7.0\DataModel.deps.json
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\bin\Debug\net7.0\DataModel.dll
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\bin\Debug\net7.0\DataModel.pdb
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\DataModel.csproj.AssemblyReference.cache
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\DataModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\DataModel.AssemblyInfoInputs.cache
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\DataModel.AssemblyInfo.cs
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\DataModel.csproj.CoreCompileInputs.cache
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\DataModel.sourcelink.json
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\DataModel.dll
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\refint\DataModel.dll
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\DataModel.pdb
+C:\Users\vamsi\Documents\CodePlay\ProjectTodoList\DataModel\obj\Debug\net7.0\ref\DataModel.dll

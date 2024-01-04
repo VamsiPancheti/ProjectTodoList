@@ -1,0 +1,44 @@
+﻿@page "/"
+
+<h1>Todo Input</h1>
+
+<fieldset>
+<input placeholder=" Enter a task name "/>
+<button>Add new Task</button>
+</fieldset>
+
+<h1>TodoList</h1>
+
+<div class="btn-group btn-group-justified">
+<button class="btn btn-primary" @onclick="ShowAllTasks">All</button>
+<button class="btn btn-primary">Done</button>
+<button class="btn btn-primary">Todo</button>
+</div>
+
+<div class="container">
+<TodoList></TodoList>
+    @foreach(var item in AllTasks)
+    {
+    <li class="list-group-item">@item <span class="badge">E</span></li>    
+    }
+
+</div>
+
+<div class="btn-group btn-group-justified">
+<button class="btn btn-danger">Delete done tasks</button>
+<button class="btn btn-danger"> Delete all tasks </button>
+</div>
+
+
+
+@code
+{
+    private List<string> AllTasks = new List<string>();
+    public void ShowAllTasks()
+    {
+        AllTasks = new List<string> { "Learn Reactjs",
+            "Practice",
+            "Create Portfolio"};//GetTodoitemsAsync();
+    }
+
+}
