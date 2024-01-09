@@ -1,10 +1,13 @@
 ﻿@page "/"
+@using DataModel
+@using TodoUI.Services
+@inject ITodoService _todoService;
 
 <h1>Todo Input</h1>
 
 <fieldset>
-<input placeholder=" Enter a task name "/>
-<button>Add new Task</button>
+<input placeholder=" Enter a task name " @bind = "NewTodo"/>
+<button class="btn btn-primary" @onclick="AddTask">Add new Task</button>
 </fieldset>
 
 <h1>TodoList</h1>
@@ -34,11 +37,33 @@
 @code
 {
     private List<string> AllTasks = new List<string>();
+        private string _newtodo = string.Empty;
+    public string NewTodo 
+    {
+        get => _newtodo;
+     set => _newtodo = value;
+    }
+
+   
+    
     public void ShowAllTasks()
     {
         AllTasks = new List<string> { "Learn Reactjs",
             "Practice",
             "Create Portfolio"};//GetTodoitemsAsync();
+    }
+
+    public async void AddTask()
+    {
+        TodoItems newTodoItem = new TodoItems{
+            TaskName = NewTodo,
+            Author = "Vamsi",
+            Date = DateTime.Now,
+            Reviews = "Important",
+            IsCompleted = false
+        };
+       var response = await _todoService.CreateTodoItem(newTodoItem);
+       Console.WriteLine(response);
     }
 
 }

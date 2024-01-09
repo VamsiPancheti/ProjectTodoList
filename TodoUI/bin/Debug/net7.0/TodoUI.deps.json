@@ -11,7 +11,8 @@
           "DataModel": "1.0.0",
           "Microsoft.AspNet.WebApi.Client": "6.0.0",
           "System.Net.Http": "4.3.4",
-          "System.Net.Http.Json": "8.0.0"
+          "System.Net.Http.Json": "8.0.0",
+          "System.Text.Json": "8.0.0"
         },
         "runtime": {
           "TodoUI.dll": {}

@@ -7,15 +7,53 @@
 @code {
     
     public IEnumerable<TodoItems> TodoItems = null;
-
+        public string UpdateID = string.Empty;
+        public string Updatename = string.Empty;
+public string ResponseMessage = string.Empty;
         protected override async Task OnInitializedAsync()
         {
             await base.OnInitializedAsync();
             TodoItems = (await _todoService.GetTodoItems()).ToList();
         }
+ public async void DeleteTask()
+    {
+        var id = TodoItems?.LastOrDefault<TodoItems>()?.Id;
+         var response = await  _todoService.DeleteTodoItem(id);
+         if(response.IsSuccessStatusCode)
+         {
+            ResponseMessage = id+" has been deleted";
+         }
+    }
+
+    public async void UpdateTodo()
+    {
+        var id = TodoItems?.LastOrDefault<TodoItems>()?.Id;
+        TodoItems newitem = new TodoItems{ TaskName = Updatename,
+        Id = UpdateID,
+        Author = "Vamsi",
+        IsCompleted = false,
+        Reviews = "TaskName Updated from UI"};
+
+        var response = await _todoService.UpdateTodoItem(id,newitem);
+        if(response.IsSuccessStatusCode)
+        {
+            ResponseMessage = "Record updated";
+        }
+
+    }
+
 }
 
 <h3>TodoList</h3>
+
+<button class="btn btn-danger" @onclick="DeleteTask">Delete done tasks</button>
+
+<div>
+    <input @bind="UpdateID" placeholder="EnterID to update"/>
+    <input @bind="Updatename" placeholder="Enter Task name to update"/>
+<button class="btn btn-primary" @onclick="UpdateTodo">UpdateTodoName</button>
+</div>
+
 @if( TodoItems == null)
 {
     <h3>No Data Available in Database</h3>
@@ -27,6 +65,7 @@ else
         <table class="table">
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>Name</th>
                     <th>IsCompleted</th>
                     <th>Author</th>
@@ -39,6 +78,7 @@ else
                 @foreach(var item in TodoItems)
                 {
                     <tr>
+                        <th>@item.Id</th>
                         <th>@item.TaskName</th>
                         <th>@item.IsCompleted</th>
                         <th>@item.Author</th>
@@ -49,5 +89,6 @@ else
 
             </tbody>
         </table>
+
     }
 }
